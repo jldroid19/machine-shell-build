@@ -1,5 +1,7 @@
 # Intro
 
+[![Alt text](./nested/images/website_logo_transparent_background.png)](https://sandboxcsp.com)
+
 ### What are we creating?
 This shell script can be used to install machine level dependencies for say a web server runnign on fedora server. We know certain dependencies must be installed in order for the applications we end up installing on teh server. Let's automate this with and easy to use shell script. 
 

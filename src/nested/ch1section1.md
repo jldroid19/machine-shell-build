@@ -12,6 +12,4 @@ app_is_installed() {
 }
 ```
 
-![Alt text](./images)
-
 Next we'll create the 
