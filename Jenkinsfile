@@ -7,7 +7,7 @@ pipeline {
         stage('Build Book') {
             steps {
                 echo 'Building book..'
-                sh '/build_tag_push.sh'
+                sh './build_tag_push.sh'
             }
             
         }
