@@ -5,12 +5,17 @@ pipeline {
 
     stages {
         stage('Build Book') {
-            echo 'Building book..'
-            sh '/build_tag_push.sh'
+            steps {
+                echo 'Building book..'
+                sh '/build_tag_push.sh'
+            }
+            
         }
         stage('Docker images') {
-            echo 'Printing Docker Images'
-            sh 'docker images'
+            steps {
+                echo 'Printing Docker Images'
+                sh 'docker images'
+            }
         }
     }
 }
