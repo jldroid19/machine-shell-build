@@ -9,7 +9,6 @@ pipeline {
                 echo 'Building book..'
                 sh './build_tag_push.sh'
             }
-            
         }
         stage('Docker images') {
             steps {
