@@ -26,7 +26,7 @@ pipeline {
                 sh 'docker tag machine-book:latest registry.digitalocean.com/sandboxcsp/machine-book:latest'
             }
         }
-        stage('Tagging image') {
+        stage('Pushing image') {
             steps {
                 sh 'docker push registry.digitalocean.com/sandboxcsp/machine-book:latest'
             }
