@@ -17,5 +17,20 @@ pipeline {
                 sh 'docker images'
             }
         }
+        stage('Registry Login') {
+            steps {
+                sh 'doctl registry login'
+            }
+        }
+        stage('Tagging image') {
+            steps {
+                sh 'docker tag machine-book:latest registry.digitalocean.com/sandboxcsp/machine-book:latest'
+            }
+        }
+        stage('Tagging image') {
+            steps {
+                sh 'docker push registry.digitalocean.com/sandboxcsp/machine-book:latest'
+            }
+        }
     }
 }
