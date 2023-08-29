@@ -19,7 +19,8 @@ pipeline {
         stage('Registry Login') {
             steps {
                 sh '''#!/bin/bash
-                    doctl registry login
+                    doctl auth init --access-token dop_v1_beee9e6bbc90c7ca85a89ef1d7e22633990d4a8a616965050ad5d5842528dd18
+                    
             '''
             }
         }
