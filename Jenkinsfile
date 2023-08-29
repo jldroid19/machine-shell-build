@@ -19,14 +19,14 @@ pipeline {
         stage('Registry Login') {
             steps {
                 sh '''#!/bin/bash
-                    doctl registry login'
+                    doctl registry login
             '''
             }
         }
         stage('Tagging image') {
             steps {
                 sh '''#!/bin/bash
-                    docker tag machine-book:latest registry.digitalocean.com/sandboxcsp/machine-book:latest'
+                    docker tag machine-book:latest registry.digitalocean.com/sandboxcsp/machine-book:latest
                 '''
             }
         }
